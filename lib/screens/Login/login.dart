@@ -33,8 +33,8 @@ class LoginPage extends StatelessWidget {
 Widget _iconLogin(){
   return Image.asset(
     "assets/images/icon_login.png",
-    width: 150.0,
-    height: 150.0,
+    width: 300.0,
+    height: 300.0,
   );
 }
 
@@ -149,7 +149,7 @@ Widget _buildButton(BuildContext context){
        Padding(padding: EdgeInsets.only(top: 16.0),
        ),
        Text(
-         'or',
+         "Don't have an Account ? ",
          style: TextStyle(
            color: Colors.white,
            fontSize:12.0
@@ -164,6 +164,13 @@ Widget _buildButton(BuildContext context){
            Navigator.pushNamed(context, RegisterPage.routeName);
          },
        ),
+       Padding(
+        padding: EdgeInsets.only(top: 16.00),
+        ),
+       Text(
+        "-----------  or  -----------",
+        style: TextStyle(color: Colors.white, fontSize: 12.0),
+      ),
     ],
   );
 }
